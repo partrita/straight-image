@@ -1,6 +1,29 @@
 # batch scanner
 
-학회사진을 비스듬하게 찍어서 보기가 힘들어서 편집하는 것을 만들었습니다. 
+학회사진을 비스듬하게 찍어서 보기가 힘들어서 편집하는 것을 만들었습니다.
+
+## Batch Image Straightener
+
+A Python-based tool for automatically detecting and correcting skew in batches of images.
+
+### Key Features:
+
+- **Automatic Skew Detection**: Utilizes computer vision techniques to identify the angle of skew in images.
+- **Batch Processing**: Efficiently handles large sets of images for streamlined workflow.
+- **Customizable Parameters**: Allows fine-tuning of skew correction angles and thresholds.
+- **Multiple File Format Support**: Works with common image formats like JPEG, PNG, and TIFF.
+- **Preservation of Image Quality**: Maintains image integrity during the straightening process.
+- **Progress Tracking**: Provides real-time feedback on batch processing status.
+- **Output Options**: Saves corrected images with customizable naming conventions.
+
+### How It Works:
+
+1. **Image Loading**: Reads images from a specified directory.
+2. **Skew Detection**: Analyzes each image to determine the angle of skew.
+3. **Rotation Correction**: Applies calculated rotation to straighten the image.
+4. **Output Generation**: Saves the corrected images to a designated folder.
+
+This tool is ideal for researchers, archivists, and anyone dealing with large volumes of scanned documents or photographs that require alignment correction.
 
 ## Getting Started
 
@@ -46,47 +69,6 @@ Explain how to run the automated tests for this system
 ```batch
 python batch_scan.py -p images/
 ```
-
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
